@@ -1,3 +1,9 @@
+:root{ 
+  --primary: #1d1d1d; 
+  --text: #fff;
+  --accent: #08fdd8;
+  --accent-hover: #019e86;
+}
 html {
   font-size: 62.5%;
   min-width: 320px;
@@ -5,11 +11,11 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.5;
-  background: #1d1d1d;
+  background: var(--primary);
   display: block;
   min-width: 320px;
   font-family: "Rubik", sans-serif;
-  color: #fff;
+  color: var(--text);
   padding: 0 1.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -27,7 +33,7 @@ svg {
   will-change: transform;
 }
 a {
-  color: #08fdd8;
+  color: var(--accent);
   -webkit-transition: color 0.3s;
   -o-transition: color 0.3s;
   transition: color 0.3s;
@@ -35,7 +41,7 @@ a {
 }
 
 a:hover {
-  color: #019e86;
+  color: var(--accent-hover);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,0 +1,9 @@
+.experience__wrapper {
+    h3{
+        font-size: 3rem;
+        border-bottom: 1px solid var(--accent);
+        @media screen and (max-width: 500px) {
+            font-size: 2rem;
+        }
+    }
+}

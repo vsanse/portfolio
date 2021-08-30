@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Experience from "./components/Experience/Experience";
 import Name from "./components/Name/Name";
 import { animate } from "./utils/mousetrail";
 
@@ -11,14 +12,7 @@ function App() {
       <header className="App-header">
         <Name/>
       </header>
-      <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <Experience/>
     </div>
   );
 }

@@ -27,7 +27,7 @@
     }
   }
   *:hover {
-    color: #08fdd8;
+    color: var(--accent);
     animation: bounce 1s both;
   }
 }
