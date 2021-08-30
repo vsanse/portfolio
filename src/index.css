@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+  min-width: 320px;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #1d1d1d;
+  display: block;
+  min-width: 320px;
+  font-family: "Rubik", sans-serif;
+  color: #fff;
+  padding: 0 1.6rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus {
+  outline: 0;
+}
+
+svg {
+  will-change: transform;
+}
+a {
+  color: #08fdd8;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #019e86;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* font-family: 'La Belle Aurore', cursive; */
+.App {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.trail {
+  /* className for the trail elements */
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  background: #fff;
+  z-index: -1;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .trail {
+    display: block;
+  }
+}
