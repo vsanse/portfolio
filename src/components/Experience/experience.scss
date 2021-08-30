@@ -1,9 +1,131 @@
 .experience__wrapper {
-    h3{
-        font-size: 3rem;
-        border-bottom: 1px solid var(--accent);
-        @media screen and (max-width: 500px) {
-            font-size: 2rem;
-        }
+  ul {
+    list-style: none;
+  }
+  h3 {
+    font-size: 3rem;
+    border-bottom: 1px solid var(--accent);
+    margin-top: 8rem;
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+      margin-top: 3rem;
     }
+  }
+  .experience__content {
+    display: flex;
+    align-items: flex-start;
+    margin: 5rem 0;
+  }
+  .experience_img {
+    max-width: 30rem;
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  .experience__content--list {
+    flex: 1;
+    padding: 0;
+    margin: 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    @media screen and (max-width: 500px) {
+      margin-right: 0;
+    }
+  }
+  .experience__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      content: "";
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: var(--white);
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      left: -2rem;
+      top: 1.25rem;
+    }
+    &::after {
+      content: "";
+      width: 0.1rem;
+      height: 0.1rem;
+      display: inline-block;
+      border-left: 1px solid var(--white);
+      position: absolute;
+      left: -1.7rem;
+      top: 1.25rem;
+      height: 0.8rem;
+    }
+    &:not(:last-child)::after {
+      height: calc(100% + 2.8rem);
+    }
+    &--logoWrapper {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      position: absolute;
+      padding: 0.8rem;
+      top: 0;
+      right: 10rem;
+      background-color: var(--light-grey);
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+    &--logo {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    &--title {
+      font-size: 2rem;
+    }
+    &--duration {
+      color: var(--light-grey);
+      font-size: 1.4rem;
+    }
+    &--skillsList {
+      max-width: calc(100% - 20rem);
+      @media screen and (max-width: 500px) {
+        max-width: 100%;
+      }
+    }
+    &--skill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      font-size: 1.4rem;
+      background-color: var(--light-grey);
+      border-radius: 0.4rem;
+      margin: 0.5rem 1rem 0.5rem 0;
+      .fab,
+      .fas {
+        margin-right: 0.8rem;
+        font-size: 2rem;
+        color: var(--accent);
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &--work {
+      padding-top: 0.5rem;
+      max-width: calc(100% - 20rem);
+      position: relative;
+      padding-left: 1.5rem;
+      @media screen and (max-width: 500px) {
+        max-width: 100%;
+      }
+      &::before {
+        content: "-";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+      }
+    }
+  }
 }

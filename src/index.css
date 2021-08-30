@@ -1,8 +1,9 @@
 :root{ 
   --primary: #1d1d1d; 
-  --text: #fff;
+  --white: #fff;
   --accent: #08fdd8;
   --accent-hover: #019e86;
+  --light-grey: rgba(255, 255, 255, 0.5)
 }
 html {
   font-size: 62.5%;
@@ -15,7 +16,7 @@ body {
   display: block;
   min-width: 320px;
   font-family: "Rubik", sans-serif;
-  color: var(--text);
+  color: var(--white);
   padding: 0 1.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -24,6 +25,8 @@ body {
 body * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 :focus {
   outline: 0;
@@ -50,7 +53,7 @@ code {
 /* font-family: 'La Belle Aurore', cursive; */
 .App {
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 .trail {
   /* className for the trail elements */
@@ -58,7 +61,7 @@ code {
   height: 6px;
   width: 6px;
   border-radius: 3px;
-  background: #fff;
+  background: var(--white);
   z-index: -1;
   display: none;
 }

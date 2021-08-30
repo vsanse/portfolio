@@ -16,7 +16,7 @@ export default function Name() {
       <span className="name__wrapper--word">h</span>
       <span className="name__wrapper--word">a</span>
       <span className="name__wrapper--word">l</span>
-      <img src="https://avatars.githubusercontent.com/u/14056492" alt="" />
+      <img src="https://avatars.githubusercontent.com/u/14056492" alt="avatar" />
       <br />
       <span className="name__wrapper--word">w</span>
       <span className="name__wrapper--word">e</span>
