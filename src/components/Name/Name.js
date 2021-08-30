@@ -18,10 +18,10 @@ export default function Name() {
       <span className="name__wrapper--word">l</span>
       <img src="https://avatars.githubusercontent.com/u/14056492" alt="avatar" />
       <br />
-      <span className="name__wrapper--word">w</span>
+      <span className="name__wrapper--word">W</span>
       <span className="name__wrapper--word">e</span>
       <span className="name__wrapper--word">b</span>
-      <span className="name__wrapper--word">&nbsp;d</span>
+      <span className="name__wrapper--word">&nbsp;D</span>
       <span className="name__wrapper--word">e</span>
       <span className="name__wrapper--word">v</span>
       <span className="name__wrapper--word">e</span>

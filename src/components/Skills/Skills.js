@@ -6,14 +6,14 @@ export default function Skills() {
   return (
     <section className="skills__wrapper">
       <h3>
-        Skills &nbsp; <i class="fas fa-glasses"></i>
+        Skills &nbsp; <i className="fas fa-glasses"></i>
       </h3>
       <div className="skills__content">
         <ul className="skills__list">
           {SkillsData.map((skill, idx) => (
             <li className="skills__list--item" key={`skills__list--item${idx}`}>
               {skill.tag && (
-                <span dangerouslySetInnerHTML={{ __html: skill.tag }} className={skill.animation}></span>
+                <span dangerouslySetInnerHTML={{ __html: skill.tag }}></span>
               )}
               <span className="skill__listItem--label">{skill.title}</span>
             </li>
