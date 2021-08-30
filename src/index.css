@@ -3,7 +3,7 @@
   --white: #fff;
   --accent: #08fdd8;
   --accent-hover: #019e86;
-  --light-grey: rgba(255, 255, 255, 0.5);
+  --light-grey: rgba(255, 255, 255, 0.65);
   --dark-grey: rgba(255, 255, 255, 0.25);
 }
 html {

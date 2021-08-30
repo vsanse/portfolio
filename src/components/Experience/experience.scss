@@ -55,12 +55,12 @@
       display: inline-block;
       border-left: 1px solid var(--white);
       position: absolute;
-      left: -1.7rem;
+      left: -1.68rem;
       top: 1.25rem;
       height: 0.8rem;
     }
     &:not(:last-child)::after {
-      height: calc(100% + 2.8rem);
+      height: calc(100% + 3rem);
     }
     &--logoWrapper {
       width: 8rem;
