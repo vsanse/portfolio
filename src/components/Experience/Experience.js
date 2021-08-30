@@ -18,7 +18,7 @@ export default function Experience() {
             );
           })}
         </ul>
-        <img src="/images/experience.svg" alt="" className="experience_img" />
+        <img src="images/experience.svg" alt="" className="experience_img" />
       </div>
     </section>
   );
