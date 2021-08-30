@@ -6,7 +6,7 @@ import ExperienceItem from "./ExperienceItem";
 export default function Experience() {
   return (
     <section className="experience__wrapper">
-      <h3>Experience</h3>
+      <h3>Experience &nbsp; <i className="fas fa-laptop"></i></h3>
       <div className="experience__content">
         <ul className="experience__content--list">
           {ExperienceData.map((item, idx) => {

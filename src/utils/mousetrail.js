@@ -26,7 +26,7 @@ Dot.prototype.draw = function () {
 };
 
 // Creates the Dot objects, populates the dots array
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 2; i++) {
   var d = new Dot();
   dots.push(d);
 }
