@@ -1,3 +1,6 @@
+let mouseTimer = null;
+let cursorVisible = true;
+
 // dots is an array of Dot objects,
 // mouse is an object used to track the X and Y position
 // of the mouse, set with a mousemove event listener below
@@ -14,6 +17,7 @@ var Dot = function () {
   this.node = (function () {
     var n = document.createElement("div");
     n.className = "trail";
+    n.style.backgroundColor = getRandomColor();
     document.body.appendChild(n);
     return n;
   })();
@@ -24,9 +28,16 @@ Dot.prototype.draw = function () {
   this.node.style.left = this.x + "px";
   this.node.style.top = this.y + "px";
 };
-
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 // Creates the Dot objects, populates the dots array
-for (var i = 0; i < 2; i++) {
+for (var i = 0; i < 12; i++) {
   var d = new Dot();
   dots.push(d);
 }
@@ -52,6 +63,14 @@ function draw() {
 
 document.addEventListener("mousemove", function (event) {
   //event.preventDefault();
+  if (mouseTimer) {
+    window.clearTimeout(mouseTimer);
+  }
+  if (!cursorVisible) {
+    Array.from(document.getElementsByClassName('trail')).forEach(item => item.classList.remove('hide'));
+    cursorVisible = true;
+  }
+  mouseTimer = window.setTimeout(disappearCursor, 300);
   mouse.x = event.pageX;
   mouse.y = event.pageY;
 });
@@ -61,4 +80,10 @@ document.addEventListener("mousemove", function (event) {
 export function animate() {
   draw();
   requestAnimationFrame(animate);
+}
+
+function disappearCursor() {
+  Array.from(document.getElementsByClassName('trail')).forEach(item => item.classList.add('hide'));
+  mouseTimer = null;
+  cursorVisible = false;
 }

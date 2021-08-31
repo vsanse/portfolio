@@ -74,7 +74,13 @@
       right: 5rem;
       background-color: var(--dark-grey);
       @media screen and (max-width: 500px) {
-        display: none;
+        width: 6rem;
+        height: 6rem;
+        right: 1rem;
+      }
+      &:hover {
+        transform: scale(1.5);
+        transition: transform 0.5s ease;
       }
     }
     &--logo {
@@ -84,6 +90,9 @@
     }
     &--title {
       font-size: 2rem;
+      @media screen and (max-width: 500px) {
+        width: calc(100% - 10rem);
+      }
     }
     &--duration {
       color: var(--light-grey);
@@ -111,6 +120,9 @@
         @media screen and (max-width: 500px) {
           font-size: 1.5rem;
         }
+        &:hover {
+          animation: rubberBand 1s both ease;
+        }
       }
     }
     &--work {
@@ -129,5 +141,35 @@
         top: 0.5rem;
       }
     }
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
   }
 }

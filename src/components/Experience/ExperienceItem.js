@@ -14,7 +14,7 @@ export default function ExperienceItem({
         <img src={logo} alt={company} className="experience__item--logo" />
       </div>
       <h4 className="experience__item--title">
-        {title} @ {company}
+        {title} @&nbsp;{company}
       </h4>
       <p className="experience__item--duration">{duration}</p>
       <ul className="experience__item--skillsList">
