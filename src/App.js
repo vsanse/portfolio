@@ -5,9 +5,9 @@ import Skills from "./components/Skills/Skills";
 import { animate } from "./utils/mousetrail";
 
 function App() {
-  useEffect(() => {
-    animate();
-  }, []);
+  // useEffect(() => {
+  //   animate();
+  // }, []);
   return (
     <div className="App">
       <header className="App-header">
